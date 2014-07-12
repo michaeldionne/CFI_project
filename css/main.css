@@ -1,0 +1,255 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/*Site-wide Fixes to TBS Styles*/
+	p {
+
+	}
+
+/* Navbar Styles*/
+	.navbar {
+		margin-bottom: 0px;
+		background-color: #e53c2e;
+		border: none;
+	}
+
+	.navbar-default .navbar-brand {
+		color: #ffffff;
+	}
+
+	.navbar-default a {
+		color: #ffffff;
+	}
+
+	.navbar-nav {
+		background-color: #333333;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+
+	.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+		color: #ffffff;
+		background-color: #666666;
+	}
+
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+		border: none;
+	}
+
+	.navbar-nav li:hover {
+		background-color: #666666;
+	}
+
+/* Header Styles */
+	#header {
+		background: url("../img/header.jpg") no-repeat center center fixed;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	  height: 700px;
+	}
+
+	#header-logo {
+		float:none;
+	    display:inline-block;
+	    vertical-align:middle;
+	    margin-top: 300px;
+	    padding-left: 10px;
+	    padding-right: 10px;
+	}
+
+/* Location and Classes Row Styles */
+	#location-and-classes div{
+		margin-top: 10px;
+	}
+	#location-and-classes {
+		margin-bottom: 10px;
+	}
+
+/* Map */
+	#map_canvas {
+	  height: 300px;
+	}
+
+/* Icon Styles */
+	.icons {
+		height: 26px;
+		margin-top: 24px;
+	}
+	.social-icons {
+		height:	18px;
+	}
+
+/* Membership & Join Us */
+#membership-and-joinus {
+	background-color: #333333;
+	color: #F1F1F2;
+}
+
+#membership-and-joinus li {
+	background-color: #4D4D4D;
+	border: none;
+	margin-bottom: 10px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+#membership-and-joinus .list-group-item:hover {
+	background-color: #666666;
+}
+
+#membership-and-joinus button {
+	background-color: #e53c2e;
+	color: white;
+	border: none;
+}
+
+.price	{
+	font-size: 2em;
+	font-style: bold;
+}
+
+#membership-and-joinus p {
+	font-size: .75em;
+}
+.list-group-item {
+	padding-top: 0px;
+}
+
+/* Twitter Feed */
+
+#twitter-feed {
+	padding-bottom: 10px;
+}
+
+#twitter-feed p {
+	margin-bottom: 0px;
+}
+
+/* Workout of the Day Row */
+	#workout-of-the-day {
+		background: url("../img/wod_footer.jpg") no-repeat center center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		height: 300px;
+	}
+
+	#workout-of-the-day h3, h4 {
+		text-align: center;
+		color: white;
+	}
+
+	#workout-of-the-day div {
+   		margin-top: 100px;
+	}
+/*Footer*/
+
+	#footer {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		background-color: #e53c2e;
+		color: white;
+	}
+
+	#footer p {
+		margin-bottom: 0px;
+	}
+
+/*-------------------------------------------------------------------------------*/
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+/* Header Styles */
+	#header {
+		background: url("../img/header.jpg") no-repeat center center fixed;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	  height: 700px;
+	}
+
+	#header-logo {
+		float:none;
+	    display:inline-block;
+	    vertical-align:middle;
+	    margin-top: 220px;
+	    padding-left: 100px;
+	    padding-right: 100px;
+	}
+
+}
+
+/*-------------------------------------------------------------------------------*/
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/*-------------------------------------------------------------------------------*/
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+/* Header Styles */
+	#header {
+		background: url("../img/header.jpg") no-repeat center center fixed;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	  height: 700px;
+	}
+
+	#header-logo {
+		float:none;
+	    display:inline-block;
+	    vertical-align:middle;
+	    margin-top: 220px;
+	    padding-left: 140px;
+	    padding-right: 140px;
+	}
+
+
+ }
+
+/*-------------------------------------------------------------------------------*/
+/* Mobile-Only Center Menu Brand */
+@media (max-width: 768px) {
+  .navbar-brand {
+      margin-left:40%;
+  }
+  .navbar-nav li {
+      text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

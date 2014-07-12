@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>CrossFit Infiltrate</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+  <script>
+    function initialize() {
+      var myLatlng = new google.maps.LatLng(39.778424, -86.162331);
+      var mapOptions = {
+        zoom: 12,
+        center: myLatlng
+      }
+      var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+
+      var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          title: 'CrossFit Infiltrate'
+      });
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+<body>
+  <!--[if lt IE 7]>
+  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+<!-- NavBar    -->
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <a class="navbar-brand visible-xs" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" href="#">Menu<span class="caret"></span></a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Schedule</a></li>
+          <li><a href="#">Coaches</a></li>
+          <li><a href="#">Join</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+<!-- Main Content Body  -->
+
+<!-- Header -->
+  <div class="container-fluid">
+    <div class="row" id="header">
+        <img src="img/header_logo.png" class="img-responsive" id="header-logo">
+    </div><!-- End Header -->
+
+<!-- Location, Classes, and Map -->
+    <div class="row" id="location-and-classes">
+      <div class="col-sm-6">
+        <div class="row">
+          <div class="col-xs-1">
+            <img src="img/location_icon.png" class="icons">
+          </div>
+          <div class="col-xs-8">
+            <h2>Location</h2>
+            <p>9 On Canal Building<br>813 N Senate Ave<br>Indianapolis, IN 46202</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="row">
+          <div class="col-xs-1">
+            <img src="img/schedule_icon.png" class="icons">
+          </div>
+          <div class="col-xs-8">
+            <h2>Classes</h2>
+            <p>We have five classes every weekday,<br>And one class on Saturdays.</p>
+            <p><a class="btn btn-default" href="#" role="button">See the schedule...</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" id="map_canvas">
+    </div><!-- End Location, Classes, and Map -->
+
+<!-- Membership & Join Us Row -->
+
+    <div class="row" id="membership-and-joinus">
+      <div class="col-sm-6">
+        <div class="row">
+          <div class="col-xs-1">
+            <img src="img/membership_icon.png" class="icons">
+          </div>
+          <div class="col-xs-10">
+            <h2>Membership</h2>
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <div class="row">
+                    <div class="col-xs-9">
+                      <h3>Per Class</h3>
+                    </div>
+                    <div class="col-xs-3">
+                      <h3>$15</h3>
+                    </div>
+                  </div>
+                  <p>For drop-ins we charge $15 per class.</p>
+                </li>
+                <li class="list-group-item">
+                  <div class="row">
+                    <div class="col-xs-9">
+                      <h3>Trial</h3>
+                    </div>
+                    <div class="col-xs-3">
+                      <h3>$50</h3>
+                    </div>
+                  </div>
+                  <p>Give us a try with 4 classes for $50.</p>
+                </li>
+                <li class="list-group-item">
+                  <div class="row">
+                    <div class="col-xs-9">
+                      <h3>Light</h3>
+                    </div>
+                    <div class="col-xs-3">
+                      <h3>$80</h3>
+                    </div>
+                  </div>
+                  <p>2 classes a week. $80 per month.</p>
+                </li>
+                <li class="list-group-item">
+                  <div class="row">
+                    <div class="col-xs-9">
+                      <h3>Standard</h3>
+                    </div>
+                    <div class="col-xs-3">
+                      <h3>$110</h3>
+                    </div>
+                  </div>
+                  <p>3 classes a week: $110 per month.<br>Student and resident discounts available.</p>
+                </li>
+                <li class="list-group-item">
+                  <div class="row">
+                    <div class="col-xs-9">
+                      <h3>Big Time</h3>
+                    </div>
+                    <div class="col-xs-3">
+                      <h3>$120</h3>
+                    </div>
+                  </div>
+                  <p>4 classes a week: $120 per month.</p>
+                </li>
+                <li class="list-group-item">
+                  <div class="row">
+                    <div class="col-xs-9">
+                      <h3>Unlimited</h3>
+                    </div>
+                    <div class="col-xs-3">
+                      <h3>$140</h3>
+                    </div>
+                  </div>
+                  <p>Come in whenever you want for $140 per month.</p>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="row">
+          <div class="col-xs-1">
+            <img src="img/join_icon.png" class="icons">
+          </div>
+          <div class="col-xs-10">
+            <h2>Join Us</h2>
+            <form role="form">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Name</label>
+                <input type="name" class="form-control" id="exampleInputName1" placeholder="">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputOptions1">Membership Options</label>
+                <select class="form-control">
+                  <option>Trial</option>
+                  <option>Light</option>
+                  <option>Standard</option>
+                  <option>Big Time</option>
+                  <option>Unlimited</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-default btn-block">Submit</button>
+              <p>Payments are made at the gym.<br>Online payment options coming soon.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div> <!-- end Membership and Join Us Row -->
+
+<!-- Twitter Feed -->
+    <div class="row" id="twitter-feed">
+      <div class="col-xs-1">
+        <img src="img/twitter_feed.png" class="icons">
+      </div>
+      <div class="col-xs-10 col-xs-offset-1">
+        <p>We just opened a week ago and we already have 23 followers! Thanks Indianapolis!</p>
+      </div>
+    </div> <!-- End Twitter Feed -->
+
+<!-- Workout of the Day Row -->
+    <div class="row" id="workout-of-the-day">
+      <div class="col-xs-8 col-xs-offset-2">
+        <h3>Workout of the Day</h3>
+        <h4>Click here for more information</h4>
+      </div>
+    </div> <!-- End Workout of the Day Row -->
+
+<!-- Footer Row -->
+    <div class="row" id="footer">
+      <div class="col-xs-9">
+        <p>Copyright 2014 Crossfit Infinite</p>
+      </div>
+      <div class="col-xs-1">
+        <img src="img/social1.png" class="social-icons">
+      </div>
+      <div class="col-xs-1">
+        <img src="img/social2.png" class="social-icons">
+      </div>
+      <div class="col-xs-1">
+        <img src="img/social3.png" class="social-icons">
+      </div>
+    </div><!-- End Footer Row -->
+  </div> <!-- /container -->
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+  </body>
+</html>
